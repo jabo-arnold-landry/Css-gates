@@ -9,7 +9,7 @@
   <body>
     <header class="relative">
       <nav
-        class="bg-linear-to-b from-neutral-950 to-neutral-10 flex items-center justify-between px-3 py-5 md:gap-2.5"
+        class="bg-linear-to-b from-neutral-950 to-neutral-10 flex items-center justify-between px-3 py-5 md:gap-2.5 md:items-center"
       >
         <img
           src="https://www.capgemini.com/wp-content/themes/capgemini2025/assets/images/capgeminiWhite.svg"
@@ -17,10 +17,7 @@
           class="w-32"
         />
         <div class="mobile-icons flex gap-5 md:hidden">
-          <img
-            width="50"
-            height="50"
-            src="https://img.icons8.com/?size=100&id=59878&format=png&color=000000"
+          <img width="50" height="50" src="https://img.icons8.com/ios/50/search--v4.png" alt="search--v4"
             alt="search"
             class="size-5"
           />
@@ -32,8 +29,8 @@
             class="size-5"
           />
         </div>
-       <section class="hidden md:block">
-         <div class="links-header"></div>
+       <section class="hidden md:flex items-center justify-between">
+         <!-- <div class="links-header"></div> -->
         <ul class="nav-links flex flex-wrap gap-4 text-white capitalize font-semibold">
           <a href="">insights</a>
           <a href="">industries</a>
@@ -41,9 +38,20 @@
           <a href="">careers</a>
           <a href="">new</a>
           <a href="">about us</a>
+          <!-- <div class="second">
+            <p>serach</p>
+            <div class="dark-white">
+              <img src="" alt="dark">
+              <img src="" alt="light">
+            </div>
+          </div> -->
         </ul>
        </section>
       </nav>
+      <div class="bg-blue-500 px-10 py-5 rounded-sm opacity-[0.9] flex flex-col justify-center mx-5 w-fit gap-5 translate-y-[10rem]">
+        <h2 class="font-bold text-xl text-white">Keeping AI on the ball</h2>
+        <p class="font-semibold text-sm text-white max-w-[24rem] word-break text-pretty">Discover how AI is elevating the fan experience for millions watching the Ryder Cup</p>
+      </div>
       <section class="hero-section-image h-screen w-full">
         <picture class="block overflow-hidden md:hidden">
           <source
@@ -71,11 +79,11 @@
             src="https://www.capgemini.com/wp-content/uploads/2025/10/2025-10-24_IQ_dotcom-banner_2880x1800px_v168.jpg"
             alt="hero-image"
             decoding="async"
-            class="absolute top-0 left-0 z-[-1] w-full h-[70vh] object-cover"
+            class="absolute top-0 left-0 z-[-1] w-full h-[60vh] object-cover"
           />
         </picture>
         <video
-    class="hidden md:block absolute top-0 left-0 z-[-1] w-full h-[70vh] object-cover"
+    class="hidden md:block absolute top-0 left-0 z-[-1] w-full h-[60vh] object-cover"
     autoplay
     muted
     loop
@@ -88,10 +96,7 @@
       </section>
       
     </header>
-    <div class="container">
-        <h2>Keeping AI on the ball</h2>
-        <p>Discover how AI is elevating the fan experience for millions watching the Ryder Cup</p>
-      </div>
+    
     <!-- <main>
       <section class="hero-section">
         <img src="#" alt="hero-section-image" />
