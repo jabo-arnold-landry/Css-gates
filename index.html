@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="/src/output.css" />
   </head>
   <body>
-    <header class="">
+    <header class="relative">
       <nav
-        class="bg-linear-to-b from-neutral-950 to-neutral-10 flex items-center justify-between px-3 py-2"
+        class="bg-linear-to-b from-neutral-950 to-neutral-10 flex items-center justify-between px-3 py-5"
       >
         <img
           src="https://www.capgemini.com/wp-content/themes/capgemini2025/assets/images/capgeminiWhite.svg"
@@ -60,9 +60,20 @@
             src="https://www.capgemini.com/wp-content/uploads/2025/10/2025-10-24_IQ_dotcom-banner_2880x1800px_v168.jpg"
             alt="hero-image"
             decoding="async"
-            class="w-[100vw] min-h-[100dvh] object-cover"
+            class="absolute top-0 left-0 z-[-1] w-full h-[70vh] object-cover"
           />
         </picture>
+        <video
+    class="hidden md:block absolute top-0 left-0 z-[-1] w-full h-[70vh] object-cover"
+    autoplay
+    muted
+    loop
+    playsinline
+  >
+    <source
+      src="https://www.capgemini.com/wp-content/uploads/2025/09/CAPGEMINI_MAKEITREAL_5s_VI_SKYSPORTS-final_v1.mp4"
+      type="video/mp4"
+    />
       </section>
     </header>
     <!-- <main>
