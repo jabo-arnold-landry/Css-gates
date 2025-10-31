@@ -7,14 +7,8 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-blue-500: oklch(62.3% 0.214 259.815);
-    --color-indigo-300: oklch(78.5% 0.115 274.713);
-    --color-indigo-800: oklch(39.8% 0.195 277.366);
-    --color-indigo-900: oklch(35.9% 0.144 278.697);
     --color-indigo-950: oklch(25.7% 0.09 281.288);
-    --color-neutral-300: oklch(87% 0 0);
-    --color-neutral-500: oklch(55.6% 0 0);
     --color-neutral-950: oklch(14.5% 0 0);
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -22,6 +16,8 @@
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-light: 300;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
@@ -197,6 +193,9 @@
   .mx-5 {
     margin-inline: calc(var(--spacing) * 5);
   }
+  .mt-0 {
+    margin-top: calc(var(--spacing) * 0);
+  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
@@ -218,6 +217,21 @@
   .size-5 {
     width: calc(var(--spacing) * 5);
     height: calc(var(--spacing) * 5);
+  }
+  .h-\[30rem\] {
+    height: 30rem;
+  }
+  .h-\[50rem\] {
+    height: 50rem;
+  }
+  .h-\[274m\] {
+    height: 274m;
+  }
+  .h-\[275px\] {
+    height: 275px;
+  }
+  .h-\[rem\] {
+    height: rem;
   }
   .h-full {
     height: 100%;
@@ -253,6 +267,12 @@
   .flex-wrap {
     flex-wrap: wrap;
   }
+  .place-content-center {
+    place-content: center;
+  }
+  .place-items-center {
+    place-items: center;
+  }
   .items-center {
     align-items: center;
   }
@@ -262,6 +282,12 @@
   .justify-center {
     justify-content: center;
   }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
+  }
+  .gap-1\.5 {
+    gap: calc(var(--spacing) * 1.5);
+  }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
   }
@@ -270,6 +296,9 @@
   }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
+  }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
   }
   .overflow-hidden {
     overflow: hidden;
@@ -301,6 +330,9 @@
   .object-cover {
     object-fit: cover;
   }
+  .object-\[50\] {
+    object-position: 50;
+  }
   .object-center {
     object-position: center;
   }
@@ -315,6 +347,10 @@
   }
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
   .text-sm {
     font-size: var(--text-sm);
@@ -373,6 +409,11 @@
       display: none;
     }
   }
+  .md\:grid-cols-2 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
   .md\:items-center {
     @media (width >= 48rem) {
       align-items: center;
@@ -381,6 +422,11 @@
   .md\:gap-2\.5 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 2.5);
+    }
+  }
+  .lg\:grid-cols-3 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
 }
